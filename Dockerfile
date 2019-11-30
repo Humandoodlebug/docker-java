@@ -13,4 +13,9 @@ RUN pacman -Syy --noconfirm pacman-contrib curl sed --needed && \
 	pacman -Scc --noconfirm && \
 	rm -rf /var/lib/pacman/sync /tmp/* /var/tmp/*
 
+
+ENV JAVA_HOME_8_X64="/usr/lib/jvm/java-8-openjdk"
+ENV JAVA_HOME_11_X64="/usr/lib/jvm/java-1-openjdk"
+ENV JAVA_HOME_X64="/usr/lib/jvm/default"
+
 CMD /bin/sh
