@@ -15,7 +15,10 @@ RUN pacman -Syy --noconfirm pacman-contrib curl sed --needed && \
 
 
 ENV JAVA_HOME_8_X64="/usr/lib/jvm/java-8-openjdk"
-ENV JAVA_HOME_11_X64="/usr/lib/jvm/java-1-openjdk"
+ENV JAVA_HOME_8="/usr/lib/jvm/java-8-openjdk"
+ENV JAVA_HOME_11_X64="/usr/lib/jvm/java-11-openjdk"
+ENV JAVA_HOME_11="/usr/lib/jvm/java-11-openjdk"
 ENV JAVA_HOME_X64="/usr/lib/jvm/default"
+ENV JAVA_HOME="/usr/lib/jvm/default"
 
 CMD /bin/sh
