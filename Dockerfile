@@ -9,6 +9,7 @@ RUN pacman -Syy --noconfirm pacman-contrib curl sed --needed && \
 		maven \
 		git \
 		git-lfs \
+		make \
 		ca-certificates && \
 	pacman -Scc --noconfirm && \
 	rm -rf /var/lib/pacman/sync /tmp/* /var/tmp/*
